@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background-color: lightgrey;
+}
+header, main {
+    text-align: center;
+}
+
+header {
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    color: #001b44;
+}
+
+.board {
+    display: inline-block;
+    width: 800px;
+    height: 800px;
+    border: 25px solid #114141;
+}
+
+.board div {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+}
+
+.board:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.board div:nth-child(n+1):nth-child(-n+8):nth-child(even) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+9):nth-child(-n+16):nth-child(odd) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+17):nth-child(-n+24):nth-child(even) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+25):nth-child(-n+32):nth-child(odd) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+33):nth-child(-n+40):nth-child(even) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+41):nth-child(-n+48):nth-child(odd) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+49):nth-child(-n+56):nth-child(even) {
+    background-color: darkslategrey;
+}
+
+.board div:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
+    background-color: darkslategrey;
+}
+
+div [class*="circle"] {
+    margin: 3px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+div .circle {
+    border: 2px solid black;
+    background-color: white;
+}
+
+div .black_circle {
+    border: 2px solid white;
+    background-color: black;
+}
