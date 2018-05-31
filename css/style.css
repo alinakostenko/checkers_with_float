@@ -44,34 +44,16 @@ header h1 {
     clear: both;
 }
 
-.board div:nth-child(n+1):nth-child(-n+8):nth-child(even) {
-    background-color: darkslategrey;
-}
-
-.board div:nth-child(n+9):nth-child(-n+16):nth-child(odd) {
-    background-color: darkslategrey;
-}
-
-.board div:nth-child(n+17):nth-child(-n+24):nth-child(even) {
-    background-color: darkslategrey;
-}
-
-.board div:nth-child(n+25):nth-child(-n+32):nth-child(odd) {
-    background-color: darkslategrey;
-}
-
-.board div:nth-child(n+33):nth-child(-n+40):nth-child(even) {
-    background-color: darkslategrey;
-}
-
-.board div:nth-child(n+41):nth-child(-n+48):nth-child(odd) {
-    background-color: darkslategrey;
-}
-
+.board div:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.board div:nth-child(n+17):nth-child(-n+24):nth-child(even),
+.board div:nth-child(n+33):nth-child(-n+40):nth-child(even),
 .board div:nth-child(n+49):nth-child(-n+56):nth-child(even) {
     background-color: darkslategrey;
 }
 
+.board div:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.board div:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.board div:nth-child(n+41):nth-child(-n+48):nth-child(odd),
 .board div:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
     background-color: darkslategrey;
 }
